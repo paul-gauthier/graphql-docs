@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
-set -vx
+#!/usr/bin/env ruby
 
-bundle install "$@"
+puts "Installing gems..."
+system("bundle install")
